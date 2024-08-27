@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>회원가입</title>
+  </head>
+  <body>
+    <section class="register-signup">
+   
+      <div class="signup-container">
+        <h2>회원가입</h2>
+        <div class="signup-flex">
+          
+          <div class="signup-flex-left">
+            <label for="userid">아이디</label>
+            <input type="text" id="userid" name="userid" required />
+
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" name="password" required />
+
+            <label for="password-confirm">비밀번호 확인</label>
+            <input type="password" id="password-confirm" name="password-confirm" required />
+
+            <label for="username">이름</label>
+            <input type="text" id="username" name="username" required />
+
+          </div>
+          <div class="signup-flex-right">
+            <label for="email">이메일 주소</label>
+            <input type="email" id="email" name="email" required />
+            <label for="phone">전화번호</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              maxlength="13"
+              pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}"
+              placeholder="휴대전화번호 입력"
+            />
+            
+            <label for="gender">성별</label>
+            <select id="gender" name="gender" required>
+              <option value="male">남성</option>
+              <option value="female">여성</option>
+            </select>
+            <label for="address">주소</label>
+            <input type="text" id="address" id="address" required />
+          </div>
+        </div>
+        <div class="terms">
+          <p class="all-accept">
+            <input type="checkbox" id="termCheckbox1" required />
+            <label for="termCheckbox1">모두 확인하였습니다</label>
+          </p>
+          <p>
+            <input type="checkbox" id="termCheckbox2" required />
+            <label for="termCheckbox2">[필수]만 14세 이상인가요</label>
+          </p>
+          <p>
+            <input type="checkbox" id="termCheckbox3" required />
+            <label for="termCheckbox3">[필수]전자금융거래 이용약관 동의</label>
+          </p>
+          <p>
+            <input type="checkbox" id="termCheckbox4" required />
+            <label for="termCheckbox4">[필수]이용약관 동의</label>
+          </p>
+          <p>
+            <input type="checkbox" id="termCheckbox5" required />
+            <label for="termCheckbox5">[필수]개인정보 동의</label>
+          </p>
+          <p>
+            <input type="checkbox" id="termCheckbox6" />
+            <label for="termCheckbox6">[선택]개인정보 수집 및 이용 동의</label>
+          </p>
+          <p>
+            <input type="checkbox" id="termCheckbox7" />
+            <label for="termCheckbox7">[선택]광고성 정보 수신 동의</label>
+          </p>
+        </div>
+        <div class="signup-btn">
+          <button>개인정보변경</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,251 @@
+
+
+/* 상품 정보, 가격, 배송비, 수량 버튼, 체크박스, 삭제버튼 */
+.cart-item {
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-item-wrapper .cart-item:last-child {
+  border-bottom: none;
+}
+
+/* 버튼 공통 */
+.cart-item button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.cart-item input {
+  outline: none;
+}
+
+/* 카트 체크박스 */
+.cart-item .cart-item-checkbox {
+  margin-right: 20px;
+  accent-color: #b63100;
+  
+}
+
+.cart-item .cart-item-checkbox input {
+  width: 20px;
+  height: 20px;
+}
+
+/* 카트 닫기버튼 */
+.cart-item .cart-item-delete {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.cart-item .cart-item-delete button {
+  font-size: 24px;
+}
+
+/* 카트 상품정보 */
+.cart-item .cart-item-info .cart-item-detail {
+  display: flex;
+}
+
+.cart-item .cart-item-info .cart-item-detail-thumb {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.cart-item .cart-item-info .cart-item-detail-text a {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cart-item .cart-item-info .cart-item-detail-text p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.cart-item .cart-item-info .cart-item-detail-text .point {
+  color: #b63100;
+}
+
+/* 카트 수령부분 */
+.cart-item .cart-item-info {
+  width: 100%;
+}
+
+.cart-item .cart-item-count {
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-item .cart-item-count p {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 2px;
+}
+
+.cart-item .cart-item-count-content {
+  display: flex;
+}
+
+.cart-item .cart-item-count-content button {
+  width: 40px;
+  height: 40px;
+  padding: 12px 0;
+  border: 1px solid #ccc;
+}
+
+.cart-item .cart-item-count-content input {
+  width: 80px;
+  height: 40px;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+}
+
+
+.cart-item-product-total-price {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.cart-item-product-total-price p {
+  padding: 2px;
+  font-size: 18px;
+  font-weight: 500;
+}
+/* 체크박스 선택 버튼들 */
+
+.cart-select-actions {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 40px;
+  gap: 10px;
+  width: auto;
+  height: 50px;
+}
+
+.cart-all-select,
+.cart-all-select-delete {
+  padding: 15px 20px;
+  border: 1px solid #e0e0e0;
+  background-color: #b63100;
+  color: white;
+  cursor: pointer;
+  line-height: 1;
+  font-size: 14px;
+}
+
+
+
+
+/* 반응형 디자인: 너비 1280px 이하 */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .cart-container {
+    padding: 100px 20px 40px;
+    margin-top: 100px;
+    width: 100%;
+  }
+}
+
+/* 반응형 디자인: 너비 768px 이하 */
+@media (max-width: 768px) {
+
+  /* 장바구니 컨테이너 */
+  .cart-container {
+    flex-direction: column;
+  }
+
+  .cart-items, .cart-summary {
+    width: 100%;
+  }
+
+  /* 장바구니 아이템 */
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item-checkbox {
+    margin-bottom: 10px;
+  }
+
+  .cart-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .cart-item-details {
+    align-items: flex-start;
+  }
+
+  .cart-item-quantity {
+    margin-top: 10px;
+  }
+  .cart-select-actions button{
+    width: 100%;
+    align-items: center;
+  }
+  /* 결제 버튼 */
+  .cart-summary-actions {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  /* 모바일 환경에서 결제정보 바 하단 고정 및 ul 요소 위치 조정 */
+  .cart-summary {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cart-summary ul {
+    margin-bottom: 10px;
+  }
+
+  .cart-summary ul li {
+    font-size: 14px;
+  }
+
+  .cart-summary-actions button {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+}

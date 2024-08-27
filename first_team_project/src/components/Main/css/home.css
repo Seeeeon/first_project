@@ -1,0 +1,293 @@
+/* swiper */
+.swiper_section {
+  padding: 5px 0 50px;
+}
+
+.swiper_wrap {
+  text-align: center;
+}
+
+.swiper_section .swiper,
+.swiper_section img {
+  width: 1280px;
+  height: 500px;
+}
+/* /swiper */
+
+/* rec_products */
+.rec_products_section {
+  padding: 50px 0;
+}
+
+.rec_products_section h2 {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.rec_products_section ul {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.rec_products_section .second_flex {
+  display: flex;
+}
+
+.flex_area {
+  border: 1px solid #c4c5ca;
+}
+
+.flex_area .rec_products_item {
+  border: 1px solid #c4c5ca;
+}
+
+.rec_products_item {
+  padding: 16px;
+  margin: 16px;
+}
+
+.rec_products_item1 img {
+  width: 760px;
+  height: 350px;
+}
+
+.rec_products_item2 img,
+.rec_products_item3 img {
+  width: 350px;
+  height: 350px;
+}
+
+.rec_products_item4 img {
+  width: 350px;
+  height: 753px;
+}
+
+.rec_products_item5 img {
+  width: 350px;
+  height: 700px;
+}
+
+.rec_products_item6 img {
+  width: 350px;
+  height: 417px;
+}
+/* /rec_products */
+
+/* products */
+.products_section {
+  padding: 50px 0;
+}
+
+.products_section h2 {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.products_section ul {
+  display: flex;
+  justify-content: flex-start;
+  transition-duration: 0.3s;
+}
+
+.products_section li {
+  margin: 4px;
+}
+
+.products_items p {
+  padding: 2px;
+}
+
+.products_section li {
+  width: 200px;
+  border: 1px solid #ececec;
+  padding: 10px;
+  transition-duration: 0.3s;
+}
+
+.products_section img {
+  transition-duration: 0.3s;
+}
+
+.products_section img:hover {
+  transform: scale(1.1, 1.1);
+  transition-duration: 0.5s;
+}
+
+.products_section li:hover {
+  transition-duration: 0.5s;
+}
+
+.item_name {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px 0 4px;
+}
+
+.item_price {
+  font-size: 20px;
+  color: #b63100;
+  font-weight: bold;
+}
+
+.star_rating {
+  display: flex;
+}
+
+.star {
+  appearance: none;
+  margin: 0;
+}
+
+.star:after {
+  content: "☆";
+  color: #ffdc19;
+  font-size: 16px;
+}
+
+.star.filled:after {
+  content: "★";
+  color: #ffdc19;
+}
+
+.products_items a {
+  position: relative;
+  color: #25262b;
+}
+
+.products_items a:hover {
+  color: #25262b;
+}
+/* /products */
+
+/* kategorie */
+.kategorie_section {
+  padding: 50px 0;
+}
+
+.kategorie_section h2 {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.kategorie_section ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.kategorie_section li {
+  padding-right: 16px;
+}
+
+.kategorie_section li img {
+  width: 180px;
+  height: 180px;
+  border: 2px solid #ececec;
+  transition-duration: 0.3s;
+}
+
+.kategorie_items {
+  border-radius: 50%;
+}
+
+.kategorie_items img:hover {
+  border: 2px solid rgba(182, 49, 0, 0.7);
+  transition-duration: 0.3s;
+}
+
+.kategorie_items p {
+  font-size: 18px;
+  margin-top: 16px;
+  text-align: center;
+  font-weight: 500;
+  color: #25262b;
+}
+
+.kategorie_items img {
+  border-radius: 50%;
+}
+/* /kategorie */
+
+/* ranking */
+.ranking_section {
+  padding: 50px 0;
+}
+
+.ranking_section h2 {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.ranking_section ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.ranking_section li {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ececec;
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+
+.ranking_section li:hover {
+  transition-duration: 0.5s;
+}
+
+.ranking_section ul .ranking_items {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.ranking_item img {
+  width: 276px;
+  transition-duration: 0.3s;
+}
+
+.ranking_item img:hover {
+  transform: scale(1.1, 1.1);
+  transition-duration: 0.5s;
+}
+
+.ranking_item a {
+  position: relative;
+  color: #25262b;
+}
+
+.ranking_item a:hover {
+  color: #25262b;
+}
+
+.ranking_item p {
+  padding: 2px;
+}
+
+.mark_best {
+  top: -10px;
+  left: -10px;
+  display: block;
+  width: 45px;
+  height: 35px;
+  background: #b63100;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+}
+
+.item_name_ranking {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 10px 0 4px;
+}
+
+.item_price_ranking {
+  font-size: 20px;
+  color: #b63100;
+  font-weight: bold;
+}
+/* /ranking */

@@ -1,0 +1,17 @@
+.login_area ul {
+  display: flex;
+  justify-content: flex-end;
+  height: 60px;
+}
+
+.login_area li {
+  padding: 16px;
+  color: #25262b;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.login_area li a:hover {
+  border-bottom: 1px solid #25262b;
+  padding-bottom: 4px;
+}

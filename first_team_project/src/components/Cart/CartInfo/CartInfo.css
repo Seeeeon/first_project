@@ -1,0 +1,37 @@
+/* 이용 안내 */
+.cart-info {
+    border: 1px solid #ccc;
+    border-top: 4px solid #b63100;
+    margin-top: 40px;
+    padding: 0 20px 0 20px;
+    margin-bottom: 100px;
+  }
+  
+  .cart-info h3 {
+    font-size: 30px;
+  }
+  .cart-info h4 {
+    font-size: 20px;
+  }
+  
+  .cart-info h3,
+  .cart-info h4 {
+    margin-top: 20px;
+  }
+  
+  .cart-info ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.2;
+  }
+  
+  .cart-info ul li {
+    margin-top: 20px;
+    margin-left: 20px;
+    list-style: disc;
+    font-size: 14px;
+  }
+  
+  .cart-info ul li:last-child {
+    margin-bottom: 20px;
+  }

@@ -1,0 +1,272 @@
+.checkout-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.checkout-container h1 {
+  text-align: center;
+  margin: 20px 0 50px;
+  font-size: 32px;
+}
+
+.items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.items-container .item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.item-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.item-quantity {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.item-price {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.payment-method-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.payment-method-buttons button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #b63100;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.payment-method-buttons button:hover {
+  background-color: #d15f5f;
+}
+
+.payment-method-buttons button.selected {
+  background-color: #d15f5f;
+}
+
+.checkout-summary {
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.checkout-summary p {
+  margin-bottom: 10px;
+}
+
+.checkout-summary p:last-child {
+  margin-bottom: 0;
+}
+
+.checkout-container .user-infomation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.checkout-container .user-infomation p {
+  margin-bottom: 10px;
+}
+
+.checkout-container .user-infomation label:last-child {
+  margin-bottom: 30px;
+}
+
+.checkout-container .user-infomation label:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.checkout-container form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.checkout-container form .checkout-text,
+.checkout-container form select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.delivery-area {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.delivery-area input {
+  max-width: 200px;
+  height: 40px;
+}
+
+.delivery-area .find-address {
+  background-color: #b63100;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  height: 40px;
+  font-size: 16px;
+  width: 100px;
+  margin-left: 5px;
+}
+
+.delivery-area .find-address:hover {
+  background-color: #d15f5f;
+}
+
+.select-bank {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+select {
+  appearance: none;
+  background: url(../../assets/images/v-icon.png) no-repeat right 12px center;
+}
+
+.make-payment {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #b63100;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.make-payment:hover {
+  background-color: #d15f5f;
+}
+
+.none-product {
+  height: 200px;
+  text-align: center;
+  margin-top: 50px;
+  white-space: pre-line;
+}
+
+.none-product p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.none-product ul li {
+  display: inline-block;
+  margin-top: 50px;
+  color: #b63100;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.payment-terms-container {
+  display: flex;
+  justify-self: center;
+  margin-bottom: 20px;
+}
+
+.payment-terms-container .payment-terms {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  accent-color: #b63100;
+  border: none;
+}
+
+.payment-terms-container .terms-text {
+  text-align: center;
+  height: 20px;
+  border: 1px solid #f9f9f9;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  position: relative;
+  width: 700px;
+  height: auto;
+  max-width: 700px;
+  max-height: 500px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}

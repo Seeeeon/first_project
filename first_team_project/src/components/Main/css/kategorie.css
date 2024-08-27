@@ -1,0 +1,40 @@
+.kategorie_section {
+  padding: 74px 0;
+}
+
+.kategorie_section ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.kategorie_section li {
+  padding-right: 16px;
+}
+
+.kategorie_section li img {
+  width: 180px;
+  height: 180px;
+  border: 2px solid #ececec;
+  transition-duration: 0.3s;
+}
+
+.kategorie_items {
+  border-radius: 50%;
+}
+
+.kategorie_items img:hover {
+  border: 2px solid rgba(182, 49, 0, 0.7);
+  transition-duration: 0.3s;
+}
+
+.kategorie_items p {
+  font-size: 18px;
+  margin-top: 16px;
+  text-align: center;
+  font-weight: 500;
+  color: #25262b;
+}
+
+.kategorie_items img {
+  border-radius: 50%;
+}

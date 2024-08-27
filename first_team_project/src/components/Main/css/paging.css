@@ -1,0 +1,12 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 50px 10px 10px 10px;
+
+}
+
+.pagination li a {
+    padding-right: 10px;
+    color: #25262b;
+    font-size: 16px;
+}
